@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold: #C9A96E;
+    --gold-light: #E6C97F;
+    --gold-dark: #A07840;
+    --cream: #FDFAF5;
+    --ivory: #F9F4EC;
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
+
+  html {
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C9A96E;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A07840;
+  }
+
+  /* Gold text selection */
+  ::selection {
+    background: #C9A96E33;
+    color: #1a1a1a;
+  }
+}
+
+@layer utilities {
+  .font-sans-luxury {
+    font-family: 'Montserrat', 'Cabin', sans-serif;
+  }
+  .gold-gradient {
+    background: linear-gradient(135deg, #C9A96E 0%, #E6C97F 50%, #C9A96E 100%);
+  }
+  .text-gold {
+    color: #C9A96E;
+  }
+  .bg-gold {
+    background-color: #C9A96E;
+  }
+  .border-gold {
+    border-color: #C9A96E;
+  }
+  .text-gold-dark {
+    color: #A07840;
+  }
+  .bg-cream {
+    background-color: #FDFAF5;
+  }
+  .bg-ivory {
+    background-color: #F9F4EC;
+  }
+}
+
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
